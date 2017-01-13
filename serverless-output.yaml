@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Pipeline CFN
+Resources:
+  Security:
+    Properties:
+      Parameters:
+        EnvironmentName:
+          Ref: AWS::StackName
+      TemplateURL: https://s3-us-west-2.amazonaws.com/storkman/f94558b8c73c07eacc3ec32cd7328113.template
+    Type: AWS::CloudFormation::Stack
+Transform: AWS::Serverless-2016-10-31

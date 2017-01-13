@@ -1,0 +1,81 @@
+{
+    "StackEvents": [
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "f276a020-d9b4-11e6-840a-50a68a0e32ba", 
+            "ResourceStatus": "ROLLBACK_COMPLETE", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:23:06.616Z", 
+            "StackName": "AwsDeploy", 
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "LogicalResourceId": "AwsDeploy"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "Security-DELETE_COMPLETE-2017-01-13T17:23:05.686Z", 
+            "ResourceStatus": "DELETE_COMPLETE", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:23:05.686Z", 
+            "StackName": "AwsDeploy", 
+            "ResourceProperties": "{\"TemplateURL\":\"s3://lambda-build-store/\\\"aws-deploy\\\"/f94558b8c73c07eacc3ec32cd7328113.template\",\"Parameters\":{\"EnvironmentName\":\"AwsDeploy\"}}\n", 
+            "PhysicalResourceId": "", 
+            "LogicalResourceId": "Security"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "ed27fba0-d9b4-11e6-81f6-503f2a2cee4a", 
+            "ResourceStatus": "ROLLBACK_IN_PROGRESS", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:22:57.703Z", 
+            "ResourceStatusReason": "The following resource(s) failed to create: [Security]. . Rollback requested by user.", 
+            "StackName": "AwsDeploy", 
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "LogicalResourceId": "AwsDeploy"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "Security-CREATE_FAILED-2017-01-13T17:22:56.757Z", 
+            "ResourceStatus": "CREATE_FAILED", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:22:56.757Z", 
+            "ResourceStatusReason": "TemplateURL must be an Amazon S3 URL.", 
+            "StackName": "AwsDeploy", 
+            "ResourceProperties": "{\"TemplateURL\":\"s3://lambda-build-store/\\\"aws-deploy\\\"/f94558b8c73c07eacc3ec32cd7328113.template\",\"Parameters\":{\"EnvironmentName\":\"AwsDeploy\"}}\n", 
+            "PhysicalResourceId": "", 
+            "LogicalResourceId": "Security"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "Security-CREATE_IN_PROGRESS-2017-01-13T17:22:56.142Z", 
+            "ResourceStatus": "CREATE_IN_PROGRESS", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:22:56.142Z", 
+            "StackName": "AwsDeploy", 
+            "ResourceProperties": "{\"TemplateURL\":\"s3://lambda-build-store/\\\"aws-deploy\\\"/f94558b8c73c07eacc3ec32cd7328113.template\",\"Parameters\":{\"EnvironmentName\":\"AwsDeploy\"}}\n", 
+            "PhysicalResourceId": "", 
+            "LogicalResourceId": "Security"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "e84deae0-d9b4-11e6-bee6-503f2a2cee82", 
+            "ResourceStatus": "CREATE_IN_PROGRESS", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:22:49.550Z", 
+            "ResourceStatusReason": "User Initiated", 
+            "StackName": "AwsDeploy", 
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "LogicalResourceId": "AwsDeploy"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "EventId": "e0ffa5d0-d9b4-11e6-99e9-503acbd4dc8d", 
+            "ResourceStatus": "REVIEW_IN_PROGRESS", 
+            "ResourceType": "AWS::CloudFormation::Stack", 
+            "Timestamp": "2017-01-13T17:22:37.455Z", 
+            "ResourceStatusReason": "User Initiated", 
+            "StackName": "AwsDeploy", 
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:163859100295:stack/AwsDeploy/e1004210-d9b4-11e6-99e9-503acbd4dc8d", 
+            "LogicalResourceId": "AwsDeploy"
+        }
+    ]
+}
