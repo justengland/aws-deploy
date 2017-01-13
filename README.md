@@ -1,6 +1,14 @@
 
 ## Issue
-When a Stack is referanced with a local file name it should transforms into an s3 style url, which is not usable for the 
+It seems when using the package command on and AWS::CloudFormation::Stack generates s3 short hand rather than a url. 
+
+```aws cloudformation package --template-file master.yaml --s3-bucket my bucket```
+
+Generates
+s3://lambda-build-store/aws-deploy/f94558b8c73c07eacc3ec32cd7328113.template
+
+Needs to generate
+https: //s3.amazonaws.com/lambda-build-store/aws-deploy/f94558b8c73c07eacc3ec32cd7328113.template
 
 ### Test Cases
 
@@ -26,6 +34,6 @@ Resources:
       Parameters:
         EnvironmentName:
           Ref: AWS::StackName
-      TemplateURL: s3://lambda-build-store/"aws-deploy"/f94558b8c73c07eacc3ec32cd7328113.template
+      TemplateURL: s3://lambda-build-store/aws-deploy/f94558b8c73c07eacc3ec32cd7328113.template
     Type: AWS::CloudFormation::Stack
 Transform: AWS::Serverless-2016-10-31```
